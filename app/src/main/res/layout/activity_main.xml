@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <ImageView android:id="@+id/imgVwAnim"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/saiful_islam"/>
+    <Button
+        android:id="@+id/btnFadeIn"
+        android:layout_below="@+id/imgVwAnim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fade In"
+        android:layout_marginLeft="50dp" />
+    <Button
+        android:id="@+id/btnFadeOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnFadeIn"
+        android:layout_toRightOf="@+id/btnFadeIn"
+        android:text="Fade Out" />
+    <Button
+        android:id="@+id/btnBounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnFadeOut"
+        android:layout_toRightOf="@+id/btnFadeOut"
+        android:text="Bounce" />
+</RelativeLayout>
